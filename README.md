@@ -70,7 +70,7 @@ The Nmap server runs inside a Docker container for easy dependency management an
         ```
 
 3.  **Build the Nmap Docker Image:**
-    Navigate to the directory containing `nmap-server.txt` and `Dockerfile`, then run:
+    Navigate to the directory containing `nmap-server.py` and `Dockerfile`, then run:
     ```bash
     docker build -t nmap-mcp-server .
     ```
@@ -86,14 +86,14 @@ The Nmap server runs inside a Docker container for easy dependency management an
     # Windows:
     .\venv\Scripts\activate
     # Install requirements (assuming you create a requirements.txt)
-    pip install gradio openai agents modelcontextprotocol # Add any other specific dependencies from app.txt/nmap-server.txt
+    pip install gradio openai agents modelcontextprotocol # Add any other specific dependencies from app.py/nmap-server.py
     ```
-    *(Note: Create a `requirements.txt` file for easier dependency management based on the imports in `app.txt` and `nmap-server.txt`)*
+    *(Note: Create a `requirements.txt` file for easier dependency management based on the imports in `app.py` and `nmap-server.py`)*
 
 ## Running the Application
 
 Ensure your OpenAI API key is set, Docker is running, and you are in the project's root directory with the virtual environment activated.
 
 ```bash
-python app.txt# nmap-mcp-server
+python app.py
  An example MCP server with a couple nmap scans as tools.
