@@ -85,10 +85,9 @@ The Nmap server runs inside a Docker container for easy dependency management an
     source venv/bin/activate
     # Windows:
     .\venv\Scripts\activate
-    # Install requirements (assuming you create a requirements.txt)
-    pip install gradio openai agents modelcontextprotocol # Add any other specific dependencies from app.py/nmap-server.py
+    # Install requirements
+    pip install -r requirements.txt
     ```
-    *(Note: Create a `requirements.txt` file for easier dependency management based on the imports in `app.py` and `nmap-server.py`)*
 
 ## Running the Application
 
